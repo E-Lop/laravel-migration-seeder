@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('main-content')
-    <h1>Offerta viaggi organizzati</h1>
+    <h1>Le nostre migliori offerte di viaggi organizzati</h1>
 
     <div class="travel-wrapper">
         @foreach ($travels as $travel)
