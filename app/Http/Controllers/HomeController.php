@@ -8,8 +8,11 @@ use App\Travel;
 class HomeController extends Controller
 {
     public function home() {
-        $travels = Travel::all();
-        dd($travels);
-        return view('home');
+        $travels = Travel::all()->sortBy('price');
+
+        $data = [
+            'travels' => $travels
+        ];
+        return view('home', $data);
     }
 }
