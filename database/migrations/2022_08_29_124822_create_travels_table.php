@@ -20,7 +20,7 @@ class CreateTravelsTable extends Migration
             // destinazione del viaggio
             $table->string('destinations', 50);
             // giorni di durata del viaggio
-            $table->smallInteger('duration');
+            $table->smallInteger('duration')->unsigned();
             // prezzo del viaggio
             $table->decimal('price', 8, 2);
             // visto di ingresso necessario
